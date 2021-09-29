@@ -19,6 +19,16 @@ body {
   background-image: url('./images/bg-pattern.png');
 }
 
+img {
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+img:hover,
+img:focus {
+  transform: scale(1.02);
+}
+
 .search-form {
   display: flex;
   justify-content: center;
@@ -37,6 +47,16 @@ body {
   border-radius: 5px;
   background-color: rgb(1, 204, 255);
   color: #fff;
+
+  transition: all 250ms linear;
+
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(51 255 110 / 70%);
+  color: black;
 }
 
 .search-btn {
