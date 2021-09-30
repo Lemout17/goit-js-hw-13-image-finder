@@ -18,6 +18,8 @@ refs.upBtn.classList.add('is-hidden');
 function onSearch(e) {
   e.preventDefault();
 
+  console.log(e.currentTarget.elements.query.value);
+  console.log(e.currentTarget.elements.query);
   apiService.query = e.currentTarget.elements.query.value;
   apiService.resetPage();
 
@@ -35,8 +37,6 @@ function onSearch(e) {
 }
 
 function onLoadMore() {
-  console.log(document.body.offsetHeight);
-
   apiService
     .getFetch()
     .then(appendImagesMarkup)
